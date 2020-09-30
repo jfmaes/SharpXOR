@@ -26,7 +26,7 @@ namespace SharpXOR
             byte[] payload = File.ReadAllBytes(inputPath);
             byte[] stuff = XOR(payload, key);
             File.WriteAllBytes(outputPath,stuff);
-            Console.WriteLine("successfully XOR'd %s! \n Data written to %s",inputPath,outputPath);
+            Console.WriteLine("successfully XOR'd {0}! \n Data written to {1}",inputPath,outputPath);
 
         }
     }
